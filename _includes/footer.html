@@ -1,0 +1,24 @@
+<footer class="footer">
+    <div class="container">
+        
+        {% if site.footer_menu %}
+        <div class="columns is-multiline">
+            {% for item in site.data[site.footer_menu] %}
+            <div class="column has-text-centered">
+                <div>
+                    <a href="{{ item.link | prepend: site.baseurl }}" class="link">{{ item.name }}</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        
+        <div class="content is-small has-text-centered">
+            <a href="https://netscape.com"><img src="../../assets/img/ns-best.gif"  /></a>
+            <a href="https://mrdoob.com/lab/javascript/effects/ie6/"><img src="../../assets/img/200.gif" height="31" width="88" /></a>
+            <br/>
+            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a></p>
+        </div>
+    </div>
+</footer>
