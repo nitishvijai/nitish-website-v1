@@ -1,0 +1,13 @@
+# Build settings
+markdown: kramdown
+remote_theme: chrisrhymes/bulma-clean-theme
+footer_menu: footer
+
+# Setup
+title: Nitish Vijai
+description: 'Freshman computer science student at the <a href="https://umich.edu">University of Michigan</a>.'
+url: https://nitishvijai.github.io/
+
+# Blog setup
+paginate: 3
+paginate_path: "/blog/page:num"
