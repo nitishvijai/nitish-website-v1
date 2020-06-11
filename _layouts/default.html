@@ -1,0 +1,63 @@
+{% if page.menubar and page.show_sidebar %} 
+    {% assign content_width = 'is-4' %} 
+{% elsif page.menubar or page.show_sidebar %} 
+    {% assign content_width = 'is-8' %} 
+{% else %} 
+    {% assign content_width = 'is-12' %} 
+{% endif %}
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    {% include hero.html %}
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                {% if page.menubar %}
+                <div class="column is-4-desktop is-4-tablet">
+                    {% include menubar.html %}
+                </div>
+                {% endif %}
+                <div class="column {{ content_width }}">
+                    {% include tabs.html %}
+                    {{ content }}
+                </div>
+                {% if site.posts and page.show_sidebar %}
+                <div class="column is-4-desktop is-12-tablet">
+                    {% include latest-posts.html %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+    {% include callouts.html %}
+    {% include footer.html %}
+    <script src="{{ site.baseurl }}/assets/js/Typewriter.js"></script>
+    <script>
+        var app = document.getElementbyId('app');
+      
+        var typewriter = new Typewriter(app, {
+          loop: true
+        });
+      
+        typewriter.typeString('I am a student')
+          .pauseFor(2500)
+          .deleteAll()
+          .typeString('I am a coder')
+          .pauseFor(2500)
+          .deleteAll()
+          .typeString('I am a team player')
+          .pauseFor(2500)
+          .deleteAll()
+          .typeString('I love technology')
+          .pauseFor(2500)
+          .deleteAll()
+          .typeString('I go to Michigan')
+          .pauseFor(2500)
+          .deleteAll()
+          .typeString('Bash me all you want Buckeyes')
+          .start();
+    </script>  
+  </body>
+</html>
