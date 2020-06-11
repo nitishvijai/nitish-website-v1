@@ -1,0 +1,32 @@
+style: is-light
+items:
+  - title: Twitter
+    subtitle: thedjvj
+    icon: fab fa-twitter
+    call_to_action_name: Follow
+    call_to_action_link: https://twitter.com/thedjvj
+  - title: Instagram
+    subtitle: nitish.vj
+    icon: fab fa-instagram
+    call_to_action_name: Profile
+    call_to_action_link: https://www.instagram.com/nitish.vj/
+  - title: GitHub
+    subtitle: nitishvijai
+    icon: fab fa-github
+    call_to_action_name: Repositories
+    call_to_action_link: https://github.com/nitishvijai?tab=repositories
+  - title: Resume
+    subtitle: Winter 2019
+    icon: far fa-file
+    call_to_action_name: PDF
+    call_to_action_link: Winter2019.pdf
+  - title: Email
+    subtitle: nitishv@umich.edu
+    icon: fas fa-envelope
+    call_to_action_name: Email
+    call_to_action_link: mailto:nitishv@umich.edu
+  - title: LinkedIn
+    subtitle: nitishvijai
+    icon: fab fa-linkedin
+    call_to_action_name: Profile
+    call_to_action_link: https://www.linkedin.com/in/nitishvijai/
